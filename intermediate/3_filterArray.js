@@ -8,3 +8,12 @@ const myNumber = [23, 24, 44, 55, 66, 77, 88, 99, 22]
 const result = myNumber.filter((num) => num < 50 )
 
 console.log(result);
+
+// SLICE AND SPLICE
+var users = ["amina", "rosmin", "ashikha", "liya", "bakira", "jessi"]
+
+console.log(users.slice(2, 5));
+
+// SPLICE => deletes the value and adds new value
+users.splice(1, 3, "HI", "gud morning") 
+console.log(users);
