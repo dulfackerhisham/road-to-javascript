@@ -12,4 +12,16 @@ var getBgColor = (selectedElement) => {
     return window.getComputedStyle(selectedElement).background
 }
 
-getBgColor(cyan)
+// var color = getBgColor(pink)
+
+// pink.addEventListener('click', () => {
+//     center.style.background = color;
+// })
+
+const magicColorChanger = (element, color) => {
+    return element.addEventListener('click', () => {
+        center.style.background = color;
+    })
+}
+
+magicColorChanger(red, getBgColor(red))
