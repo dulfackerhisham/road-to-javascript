@@ -9,8 +9,8 @@ setInterval(() => {
         counter.innerText = count;
     }
     
-}, 1)
+}, 1);
 
 setTimeout( () => {
     followers.innerText = "Followers In Intagram"
-}, 5000)
+}, 5000);
