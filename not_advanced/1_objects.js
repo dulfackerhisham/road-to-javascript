@@ -1,3 +1,4 @@
+// constructor functions and New keyword
 var user = function(firstName, courseCount){
     this.firstName = firstName;
     this.courseCount = courseCount;
@@ -6,9 +7,18 @@ var user = function(firstName, courseCount){
     }
 }
 
-var hitesh = new user("hitesh", 2)
+user.prototype.getFirstName = function () {
+    console.log(`Your firstname is : ${this.firstName}`);
+};
 
-console.log(hitesh);
+var father = new user("dulfacker", 2);
+father.getCourseCount()
+father.getFirstName()
 
-var liya = new user("liya", 5)
-console.log(liya);
+console.log(father);
+
+var mother = new user("jouhara", 5)
+mother.getCourseCount()
+mother.getFirstName()
+
+console.log(mother);
