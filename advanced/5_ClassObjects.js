@@ -15,3 +15,4 @@ console.log("=======================================");
 let phones = iphonex.getMobile();
 
 phones.forEach((c) => console.log(c));
+console.log(iphonex.mobileList);

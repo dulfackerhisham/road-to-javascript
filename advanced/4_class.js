@@ -4,18 +4,18 @@ class Mobile{
         this.version = version
     }
 
-    mobileList = [];
+    #mobileList = [];
 
     getInfo(){
         return {series: this.series, version: this.version}
     }
 
     enrollMobile(series){
-        this.mobileList.push(series)
+        this.#mobileList.push(series)
     }
 
     getMobile(){
-        return this.mobileList
+        return this.#mobileList
     }
 }
 
